@@ -1,10 +1,10 @@
 package helpers
 
 import (
-	mgo "gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 	"code.google.com/p/go.crypto/bcrypt"
 	"github.com/elcct/defaultproject/models"
+	mgo "gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 func Login(c *mgo.Database, email string, password string) (user *models.User, err error) {
@@ -15,7 +15,7 @@ func Login(c *mgo.Database, email string, password string) (user *models.User, e
 
 	err = bcrypt.CompareHashAndPassword(user.Password, []byte(password))
 	if err != nil {
-		user = nil	
+		user = nil
 	}
 	return
 }

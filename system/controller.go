@@ -3,12 +3,13 @@ package system
 import (
 	"bytes"
 	"html/template"
-	mgo "gopkg.in/mgo.v2"
-	"github.com/zenazn/goji/web"
+
 	"github.com/gorilla/sessions"
+	"github.com/zenazn/goji/web"
+	mgo "gopkg.in/mgo.v2"
 )
 
-type Controller struct {	
+type Controller struct {
 }
 
 func (controller *Controller) GetSession(c web.C) *sessions.Session {

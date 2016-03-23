@@ -1,8 +1,8 @@
 package helpers
 
 import (
-	"code.google.com/p/go.crypto/bcrypt"
 	"github.com/elcct/defaultproject/models"
+	"golang.org/x/crypto/bcrypt"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

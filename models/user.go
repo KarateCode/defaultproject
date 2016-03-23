@@ -3,8 +3,8 @@ package models
 import (
 	"time"
 
-	"code.google.com/p/go.crypto/bcrypt"
 	"github.com/golang/glog"
+	"golang.org/x/crypto/bcrypt"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
